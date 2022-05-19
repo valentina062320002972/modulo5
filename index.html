@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+  </head>
+<body>
+<header>
+  <nav   id="header-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+            <a  href="index.html"  class="navbar-brand">
+               <div id="logo-img" class="d-none d-lg-block d-inline-block align-text-top"></div> 
+               
+            </a>  
+            <a  href="index.html"  class="navbar-brand">
+                  <h1>Restaurante ABC</h1>   
+                  <img src="images/michelin.png" width="40" height="20" alt="Michelin-certification">
+                  <span>Michelin</span> 
+
+              </a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+       
+      </button>
+      
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="nav-list" class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li id="navHomeButton" class="nav-item" >       
+       <a class="nav-link d-none d-sm-block d-md-none active" href="index.html">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg>Home
+        </a>
+         </li>
+        <li  id="navMenuButton" class="nav-item">
+        <a class="nav-link  " href="#" onclick="$dc.loadMenuCategories();" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+  <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+</svg>Menu
+        </a>
+        </li>
+        <li class="nav-item">
+         
+        <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+  <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+</svg>Nosotros
+        </a>
+         </li>
+         
+          <li class="nav-item">
+
+        <a class="nav-link " href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+</svg>Herramientas
+        </a>
+        </li>
+
+      <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span> 410-602-5008</span></a><div>* We Deliver</div>
+            </li>
+          </ul>
+
+      </div>
+      </div>
+     
+  </nav>
+</header>
+
+<div id="call-btn" class="d-block d-sm-none">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center d-block d-sm-none">* We Deliver</div>
+
+<div id="main-content" class="container"></div>
+
+
+   <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="d-block d-sm-none">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="d-block d-sm-none">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+   <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
